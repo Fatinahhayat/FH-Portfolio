@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #ebe6e2; */
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ebe6e2;
+    padding-top: 60px;
+}
+
+.header {
+    background-color: #ebe6e2;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    border-bottom: 1px solid #ffffff;
+    
+}
+
+.header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    min-height: 60px;
+}
+
+#logo {
+    height: 50px;
+    
+}
+
+.nav {
+    transition: all 0.3s step-start;
+}
+
+.nav_list {
+    display: flex;
+    column-gap: 40px;
+}
+
+
+
+.nav_link {
+    color: #475569;
+    font-size: 12px;
+    font-weight: bold;
+    transition: all 0.4s;
+    font-family: "Lora", serif;
+}
+
+.nav_link:hover,
+.nav_link:focus {
+    color: #1e90ff;
+}
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    height: 2px;
+    width: 27px;
+    background-color: #475569;
+    margin: 5px 0;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav--open {
+    transform: translate(0) !important;
+}
+
+.hamburger--open .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger--open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger--open .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+.aboutme {
+    display: grid;
+    padding: 50px;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 690px) {
+    .nav {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        background-color: #ebe6e2;
+        width: 100%;
+        height: 90%;
+        padding: 10px 0 25px;
+        transform: translateX(-100%);
+        border-bottom: 2px solid #ffffff;
+    }
+
+
+    .nav_list {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+    }
+
+    .nav_link{
+        font-size: 14px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .aboutme {
+        width: 100%;
+        align-items: center;
+        display: block;
+    }
+
+    .aboutimg {
+        width: 100%;
+        align-items: center;
+        display: block;
+        
+    }
+
+    .button {
+        padding-top: 20px;
+    }
+
+    .resume {
+        width: 100%;
+        align-items: center;
+        display: block;
+    }
+
+    .wrapper img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: auto;
+    }
+   
+    
+}
+
+.typewriter h1 {
+    color: hsl(0, 0%, 20%);
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    overflow: hidden;
+    border-right: 0.15em solid hsl(0, 0%, 20%);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .1em;
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+    from{ width: 0}
+    to { width: 100%}
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: hsl(0, 0%, 20%); }
+}
+
+p {
+    
+    color: rgb(112, 112, 112);
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 2%;
+    line-height: 140%;
+
+}
+
+#intro {
+    text-align: center;
+}
+
+#hero {
+    height: 400px;
+    padding-left: 20%;
+   
+}
+
+#aboutimg {
+    height: 250px;
+    border-radius: 25%;
+   
+}
+
+h2 {
+    color:  #1e90ff;
+    font-family: "Lora", serif;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+}
+
+h3 {
+    color: #475569;
+    font-family: "Lora", serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+button {
+    width: 100%;
+    font-family: "Lora", serif;
+    background-color: #1e90ff;
+    border-radius: 40%;
+    padding: 2.25%;
+    color: #ebe6e2;
+    border-style: none;
+    
+    
+}
+
+.About_title {
+    text-align: left;
+    padding-left: 50px;
+
+}
+
+
+.aboutimg {
+    padding-left: 30%;
+    padding-right: 40%;
+}
+
+.wrapper {
+    width: 100%;
+    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center; 
+    background-color: #ebe6e2;
+}
+
+.image {
+    width: 450px;
+    position: relative;
+}
+
+
+
+.wrapper img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(31, 143, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.content:hover {
+    opacity: 1;
+}
+
+.content h2 {
+    font-size: 45px;
+    color: #ebe6e2;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 19px;
+    color: #ebe6e2;
+}
+
+.content > * {
+    transform:translateY(25px);
+    transition: transform 0.6s;
+}
+
+.content:hover > * {
+    transform:translateY(0px);
+}
+
+.row {
+    padding: 4px;
+}
+
+.column {
+    padding: 4px;
+}
+
+
+.skills_Title {
+    text-align: left;
+    padding-left: 50px;
+}
+
+#skillsimg {
+    width: auto;
+    height: 150px;
+    padding: 10px;
+  
+}
+
+.skillscontainer {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contactme {
+    text-align: center;
+}
+
+.mb-6 {
+    text-align: center;
+    font-family: "Lora", serif;
+    color: rgb(112, 112, 112);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-6 button {
+    padding: 5px;
+    width: 300px;
+}
+
+footer {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 200;
+    color: hsl(0, 0%, 20%);
+    font-size: 10px;
+
+}
+
+
+
+
+
+
