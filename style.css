@@ -168,6 +168,7 @@ body {
    .typewriter h1 {
         width: fit-content;
         height: auto;
+        font-size: 20px;
    }
    
 }
