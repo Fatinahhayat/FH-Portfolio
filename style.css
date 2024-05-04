@@ -164,6 +164,11 @@ body {
         display: block;
         margin: auto;
     }
+
+    .typewriter {
+        width: auto;
+        height:fit-content;
+   }
    
 }
 
