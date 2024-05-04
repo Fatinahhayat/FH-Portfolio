@@ -165,7 +165,7 @@ body {
         margin: auto;
     }
 
-   .typewriter {
+   .typewriter h1 {
         width: fit-content;
         height: auto;
    }
