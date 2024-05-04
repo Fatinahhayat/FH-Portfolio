@@ -165,9 +165,9 @@ body {
         margin: auto;
     }
 
-    .typewriter {
-        width: auto;
-        height:fit-content;
+   .typewriter {
+        width: fit-content;
+        height: auto;
    }
    
 }
