@@ -370,6 +370,7 @@ button {
 .mb-6 button {
     padding: 5px;
     width: 300px;
+    cursor: pointer;
 }
 
 footer {
