@@ -160,7 +160,7 @@ body {
 
     .wrapper img {
         width: 100%;
-        height: 100%;
+        height: auto%;
         display: block;
         margin: auto;
     }
@@ -168,7 +168,7 @@ body {
    .typewriter h1 {
         width: 100%;
         height: auto;
-        font-size: 20px;
+        
    }
    
 }
