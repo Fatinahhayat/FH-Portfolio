@@ -159,17 +159,16 @@ body {
     }
 
     .wrapper img {
-        width: 100%;
+        width: fit-content;
         height: auto;
         display: block;
         margin: auto;
     }
 
    .typewriter h1 {
-        width: 100%;
-        
-        
-   }
+        width: fit-content;
+        height: auto;
+    }
    
 }
 
