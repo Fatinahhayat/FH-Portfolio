@@ -168,7 +168,80 @@ body {
    .typewriter h1 {
         width: fit-content;
         height: auto;
+        font-size: 20px;
+       
     }
+
+   
+}
+
+@media (max-width: 450px) {
+    .nav {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        background-color: #ebe6e2;
+        width: 100%;
+        height: 90%;
+        padding: 10px 0 25px;
+        transform: translateX(-100%);
+        border-bottom: 2px solid #ffffff;
+    }
+
+
+    .nav_list {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+    }
+
+    .nav_link{
+        font-size: 14px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .aboutme {
+        width: 100%;
+        align-items: center;
+        display: block;
+    }
+
+    .aboutimg {
+        width: 100%;
+        align-items: center;
+        display: block;
+        
+    }
+
+    .button {
+        padding-top: 20px;
+    }
+
+    .resume {
+        width: 100%;
+        align-items: center;
+        display: block;
+    }
+
+    .wrapper img {
+        width: fit-content;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+   .typewriter h1 {
+        width: fit-content;
+        height: auto;
+        font-size: 20px;
+       
+    }
+
+    .image {
+        width: 200px;
    
 }
 
