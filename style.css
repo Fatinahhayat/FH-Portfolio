@@ -107,7 +107,7 @@ body {
     align-items: center;
 }
 
-@media (max-width: 690px) {
+@media (max-width: 768px) {
     .nav {
         position: fixed;
         top: 60px;
@@ -166,7 +166,7 @@ body {
     }
 
    .typewriter h1 {
-        width: fit-content;
+        width: 100%;
         height: auto;
         font-size: 20px;
    }
