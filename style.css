@@ -160,10 +160,14 @@ body {
 
     .wrapper img {
         width: 100%;
-        height: auto%;
+        height: auto;
         display: block;
         margin: auto;
     }
+
+    .image {
+        width: 100%
+        height: auto;
 
    .typewriter h1 {
         width: 100%;
