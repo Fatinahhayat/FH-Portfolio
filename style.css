@@ -173,6 +173,12 @@ body {
    
 }
 
+@media (min-width: 1400px) {
+    section {
+        padding-top: 75px;
+    }
+}
+
 .typewriter h1 {
     color: hsl(0, 0%, 20%);
     font-family: "Nanum Myeongjo", serif;
